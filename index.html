@@ -5,13 +5,13 @@
   <link rel="stylesheet" href="vendor/mocha/mocha.css" />
 </head>
 <body>
-  <div id="mocha"></div>
   <script src="vendor/chai/chai.js"></script>
   <script src="vendor/mocha/mocha.js"></script>
-  <script src="vendor/blanket/blanket.min.js"></script>
+  <script src="vendor/blanket/blanket.min.js" data-cover-adapter="vendor/blanket/mocha-blanket.js"></script>
   <script>mocha.setup('tdd')</script>
   <script src="src/main.js" data-cover></script>
   <script src="test/test.main.js"></script>
+  <div id="mocha"></div>
   <script>
     mocha.checkLeaks();
     mocha.run();
