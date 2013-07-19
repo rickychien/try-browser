@@ -1,7 +1,8 @@
 var assert = chai.assert;
 
 suite('main', function() {
-  setup(function() {
+  suiteSetup(function() {
+    main.printParagraph();
     this.p = document.querySelector('p');
   });
 
