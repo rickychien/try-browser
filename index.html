@@ -6,9 +6,10 @@
   <script src="vendor/chai/chai.js"></script>
   <script src="vendor/mocha/mocha.js"></script>
   <script src="vendor/blanket/blanket.min.js" 
-          data-cover-adapter="vendor/blanket/mocha-blanket.js"></script>
+          data-cover-adapter="vendor/blanket/mocha-blanket.js"
+          data-cover-only="//src/main/"></script>
   <script>mocha.setup('tdd')</script>
-  <script src="src/main.js" data-cover></script>
+  <script src="src/main.js"></script>
   <script src="test/test.main.js"></script>
 </head>
 <body>
